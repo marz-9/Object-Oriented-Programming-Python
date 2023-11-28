@@ -11,10 +11,10 @@ class Square(Shape):
         super().__init__(name,color,description)
         self.leng=leng    
     def SArea(self):
-        sarea=self.leng**2
+        sarea=self.leng*self.leng
         return sarea   
     def __str__(self):
-        return("The name of the shape: {} and the color of it: {}. {} ".format(self.name,self.color,self.description,self.leng))
+        return("The name of the shape: {} and the color of it: {}. {} ".format(self.name,self.color,self.description))
     
 class Circle(Shape):
     def __init__(self,name,color,description,rad):
@@ -24,7 +24,7 @@ class Circle(Shape):
         carea=(3.14*(self.rad**2))
         return carea
     def __str__(self):
-        return("The name of the shape: {} and the color of it: {}. {}".format(self.name,self.color,self.description,self.rad))
+        return("The name of the shape: {} and the color of it: {}. {}".format(self.name,self.color,self.description))
     
     
 
